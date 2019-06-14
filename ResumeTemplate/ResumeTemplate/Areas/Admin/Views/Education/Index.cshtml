@@ -1,0 +1,35 @@
+﻿@model ResumeTemplate.Models.Education
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+
+        <form action="@Url.Action("Create", "Education")" method="post">
+
+            <div class="form-group">
+                @Html.TextBoxFor(m => m.GraduateDate)
+            </div>
+            <div class="form-group">
+                @Html.TextBoxFor(m => m.Speciality)
+            </div>
+            <div class="form-group">
+                @Html.TextBoxFor(m => m.EducationCenter)
+            </div>
+            <div class="form-group">
+                @Html.TextBoxFor(m => m.Description)
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

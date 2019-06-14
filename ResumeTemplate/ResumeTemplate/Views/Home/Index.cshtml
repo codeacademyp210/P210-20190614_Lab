@@ -1,0 +1,12 @@
+﻿@model ResumeTemplate.Models.HomeViewModel
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+@Html.Partial("_HomeSubpage")
+@Html.Partial("_AboutSubpage")
+@Html.Partial("_ResumeSubpage", Model)
+@Html.Partial("_PortfolioSubpage")
+@Html.Partial("_ContactSubpage")
